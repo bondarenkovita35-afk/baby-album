@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Oskars magiska fotoalbum • September 2021</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Звёздное небо -->
+    <div class="star-sky"></div>
+
+    <div class="album-shell">
+        <!-- Шапка альбома -->
+        <header class="album-header">
+            <div class="logo-area">
+                <div class="logo-wrap">
+                    <img src="images/logotip.jpg" alt="LiteCode Studio logotyp">
+                </div>
+                <div class="logo-cloud"></div>
+                <div class="logo-stars"></div>
+            </div>
+
+            <div class="album-title-block">
+                <h1>Oskars magiska fotoalbum</h1>
+                <p>September 2021 • 6 månader</p>
+            </div>
+        </header>
+
+        <!-- Основная часть -->
+        <main class="album-main">
+            <!-- Навигация слева -->
+            <aside class="album-nav">
+                <ul id="pageTabs">
+                    <li class="active">Välkommen</li>
+                    <li>Första leendet</li>
+                    <li>Värme hemma</li>
+                    <li>Små äventyr</li>
+                    <li>Familjestund</li>
+                    <li>Tack-sida</li>
+                </ul>
+                <div class="nav-decor">
+                    <span class="nav-bunny">🐰</span>
+                    <span class="nav-bear">🧸</span>
+                    <span class="nav-fox">🦊</span>
+                    <span class="nav-cloud">☁️</span>
+                </div>
+            </aside>
+
+            <!-- Страница альбома -->
+            <section class="album-page">
+                <div class="page-inner">
+                    <div id="photoFrame" class="photo-frame single big">
+                        <!-- сюда JS вставит фото -->
+                    </div>
+
+                    <div class="page-text">
+                        <h2 id="pageTitle"></h2>
+                        <p id="pageSubtitle" class="page-subtitle"></p>
+                        <p id="pageDescription"></p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- Низ -->
+        <footer class="album-footer">
+            <div class="pager">
+                <button id="prevBtn" class="pager-btn">« Föregående</button>
+                <span id="pageIndicator" class="pager-indicator">1 / 6</span>
+                <button id="nextBtn" class="pager-btn primary">Nästa »</button>
+            </div>
+
+            <p class="footer-note">
+                © 2025 • Oskars magiska fotoalbum • Skapat med kärlek och lite kod ✨
+            </p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
